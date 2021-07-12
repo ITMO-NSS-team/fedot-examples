@@ -1,5 +1,4 @@
-# fedot-examples
-[Original FEDOT repository](https://github.com/nccr-itmo/FEDOT)
+# Description of jupyter notebooks 
 
 ---
 
