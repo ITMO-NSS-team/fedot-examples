@@ -1,0 +1,89 @@
+{
+	"total_pipeline_operations": [
+		"smoothing",
+		"lagged",
+		"dtreg"
+	],
+	"depth": 4,
+	"nodes": [
+		{
+			"operation_id": 3,
+			"operation_type": "smoothing",
+			"operation_name": "TsSmoothingImplementation",
+			"custom_params": "default_params",
+			"params": "default_params",
+			"nodes_from": [],
+			"fitted_operation_path": "fitted_operations\\operation_3.pkl",
+			"rating": null
+		},
+		{
+			"operation_id": 2,
+			"operation_type": "lagged",
+			"operation_name": "LaggedTransformationImplementation",
+			"custom_params": {
+				"window_size": 10
+			},
+			"params": {
+				"window_size": 10
+			},
+			"nodes_from": [
+				3
+			],
+			"fitted_operation_path": "fitted_operations\\operation_2.pkl",
+			"rating": null
+		},
+		{
+			"operation_id": 1,
+			"operation_type": "dtreg",
+			"operation_name": "DecisionTreeRegressor",
+			"custom_params": "default_params",
+			"params": "default_params",
+			"nodes_from": [
+				2
+			],
+			"fitted_operation_path": "fitted_operations\\operation_1.pkl",
+			"rating": null
+		},
+		{
+			"operation_id": 5,
+			"operation_type": "lagged",
+			"operation_name": "LaggedTransformationImplementation",
+			"custom_params": {
+				"window_size": 25.50043144534382
+			},
+			"params": {
+				"window_size": 25.50043144534382
+			},
+			"nodes_from": [],
+			"fitted_operation_path": "fitted_operations\\operation_5.pkl",
+			"rating": null
+		},
+		{
+			"operation_id": 4,
+			"operation_type": "dtreg",
+			"operation_name": "DecisionTreeRegressor",
+			"custom_params": "default_params",
+			"params": "default_params",
+			"nodes_from": [
+				5
+			],
+			"fitted_operation_path": "fitted_operations\\operation_4.pkl",
+			"rating": null
+		},
+		{
+			"operation_id": 0,
+			"operation_type": "dtreg",
+			"operation_name": "DecisionTreeRegressor",
+			"custom_params": "default_params",
+			"params": "default_params",
+			"nodes_from": [
+				1,
+				4
+			],
+			"fitted_operation_path": "fitted_operations\\operation_0.pkl",
+			"rating": null
+		}
+	],
+	"preprocessing": "preprocessing\\data_preprocessor.pkl",
+	"descriptive_id": "(((/n_smoothing_default_params;)/n_lagged_{'window_size': 10};)/n_dtreg_default_params;;(/n_lagged_{'window_size': 25.50043144534382};)/n_dtreg_default_params;)/n_dtreg_default_params"
+}
