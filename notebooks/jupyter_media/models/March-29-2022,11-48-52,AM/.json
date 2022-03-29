@@ -1,0 +1,50 @@
+{
+	"total_pipeline_operations": [
+		"lagged",
+		"ridge"
+	],
+	"depth": 2,
+	"nodes": [
+		{
+			"operation_id": 1,
+			"operation_type": "lagged",
+			"operation_name": "LaggedTransformationImplementation",
+			"custom_params": {
+				"window_size": 30.86649265223049
+			},
+			"params": {
+				"window_size": 30.86649265223049
+			},
+			"nodes_from": [],
+			"fitted_operation_path": [
+				"fitted_operations",
+				"operation_1.pkl"
+			],
+			"rating": null
+		},
+		{
+			"operation_id": 0,
+			"operation_type": "ridge",
+			"operation_name": "Ridge",
+			"custom_params": {
+				"alpha": 9.967298072889044
+			},
+			"params": {
+				"alpha": 9.967298072889044
+			},
+			"nodes_from": [
+				1
+			],
+			"fitted_operation_path": [
+				"fitted_operations",
+				"operation_0.pkl"
+			],
+			"rating": null
+		}
+	],
+	"preprocessing": [
+		"preprocessing",
+		"data_preprocessor.pkl"
+	],
+	"descriptive_id": "(/n_lagged_{'window_size': 30.86649265223049};)/n_ridge_{'alpha': 9.967298072889044}"
+}
