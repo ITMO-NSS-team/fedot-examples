@@ -1,0 +1,30 @@
+{
+    "total_pipeline_operations": [
+        "lasso"
+    ],
+    "depth": 1,
+    "nodes": [
+        {
+            "operation_id": 0,
+            "operation_type": "lasso",
+            "operation_name": "Lasso",
+            "custom_params": {
+                "alpha": 2.39001770161282
+            },
+            "params": {
+                "alpha": 2.39001770161282
+            },
+            "nodes_from": [],
+            "fitted_operation_path": [
+                "fitted_operations",
+                "operation_0.pkl"
+            ],
+            "rating": null
+        }
+    ],
+    "preprocessing": [
+        "preprocessing",
+        "data_preprocessor.pkl"
+    ],
+    "descriptive_id": "/n_lasso_{'alpha': 2.39001770161282}"
+}

@@ -1,0 +1,48 @@
+{
+    "total_pipeline_operations": [
+        "lgbm"
+    ],
+    "depth": 1,
+    "nodes": [
+        {
+            "operation_id": 0,
+            "operation_type": "lgbm",
+            "operation_name": "LGBMClassifier",
+            "custom_params": {
+                "num_leaves": 34,
+                "colsample_bytree": 0.42529034825204426,
+                "subsample": 0.7486623947627684,
+                "subsample_freq": 10,
+                "learning_rate": 0.0244848348873392,
+                "n_estimators": 100,
+                "verbose": -1,
+                "num_threads": 1,
+                "lambda_l1": 1.6623982003153548e-06,
+                "lambda_l2": 4.376590402163925e-07
+            },
+            "params": {
+                "num_leaves": 34,
+                "colsample_bytree": 0.42529034825204426,
+                "subsample": 0.7486623947627684,
+                "subsample_freq": 10,
+                "learning_rate": 0.0244848348873392,
+                "n_estimators": 100,
+                "verbose": -1,
+                "num_threads": 1,
+                "lambda_l1": 1.6623982003153548e-06,
+                "lambda_l2": 4.376590402163925e-07
+            },
+            "nodes_from": [],
+            "fitted_operation_path": [
+                "fitted_operations",
+                "operation_0.pkl"
+            ],
+            "rating": null
+        }
+    ],
+    "preprocessing": [
+        "preprocessing",
+        "data_preprocessor.pkl"
+    ],
+    "descriptive_id": "/n_lgbm_{'num_leaves': 34, 'colsample_bytree': 0.42529034825204426, 'subsample': 0.7486623947627684, 'subsample_freq': 10, 'learning_rate': 0.0244848348873392, 'n_estimators': 100, 'verbose': -1, 'num_threads': 1, 'lambda_l1': 1.6623982003153548e-06, 'lambda_l2': 4.376590402163925e-07}"
+}
