@@ -14,7 +14,7 @@ Notebooks correspond to certain versions of the framework:
 * [version_04_1](notebooks/version_04_1) - *fedot==0.4.1*
 * [version_05](notebooks/version_05) - *fedot==0.5.0*
 * [version_05_1](notebooks/version_05_1) - *fedot==0.5.1*
-* [version_05_2](notebooks/version_05_1) - *fedot==0.5.2*
+* [version_05_2](notebooks/version_05_2) - *fedot==0.5.2*
 * [latest](notebooks/latest) - *fedot==0.6.1*
 
 All supplementary materials for guides are placed in folders "data" (csv files for examples) 
