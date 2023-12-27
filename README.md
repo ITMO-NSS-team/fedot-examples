@@ -17,7 +17,7 @@ Notebooks correspond to certain versions of the framework:
 * [version_05_2](notebooks/version_05_2) - *fedot==0.5.2*
 * [version_06_1](notebooks/version_06_1) - *fedot==0.6.1*
 * [version_06_2](notebooks/version_06_2) - *fedot==0.6.2*
-* [latest](notebooks/latest) - *fedot==0.7.0*
+* [latest](notebooks/latest) - *fedot==0.7.2*
 
-All supplementary materials for guides are placed in folders "data" (csv files for examples) 
+All supplementary materials for guides are placed in folders "data" (csv files for examples)
 and "jupyter_media" (plots and animations).
